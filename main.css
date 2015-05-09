@@ -2,10 +2,27 @@ h1{
 	color:red;
 }
 
+body{
+	margin:0;
+	padding:0;
+	text-align: center;
+}
+
 .noise-filter{
 	width:100%;
 	height:100%;
-	background-image:'image.png';
+	background-image:url('http://www.transparenttextures.com/patterns/clean-gray-paper.png');
 	background-repeat: repeat;
-	
+	position:absolute;
+	margin:0;
+	opacity:0.2;
+	top:0px;
+
+
+}
+
+#center-image{
+	width:70%;
+	height:auto;
+	margin:0 auto;
 }
