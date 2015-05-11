@@ -1,11 +1,30 @@
 h1{
-	color:red;
+	color:#e84d2e;
+	font-family: 'Playfair Display SC', serif;
+	text-shadow: #e84d2e 0px 0px 2px;
+	font-weight:700;
+	font-style: italic;
+	font-size: 3em;
+	position:fixed;
+	width:40%;
+	text-align: right;
+	right:1em;
+}
+
+#roxanne{
+	font-size: 1.4em;
 }
 
 body{
 	margin:0;
 	padding:0;
 	text-align: center;
+	background-color: #f2f1e1;
+}
+
+body, html, main {
+	/* important */
+	height: 100%;
 }
 
 .noise-filter{
@@ -21,8 +40,45 @@ body{
 
 }
 
-#center-image{
-	width:70%;
-	height:auto;
-	margin:0 auto;
+.link{
+	display:block;
+	width:33%;
+	float:left;
+	padding: 0 0 2em 0;
+}
+
+.fixed-blur{
+	color:transparent;
+	text-shadow: rgba(0, 0, 0, 0.5) 0px 0px 3px;
+	font-size:0.8em;
+	width:20%;
+	text-align: left;
+	float:left;
+	margin: 1em;
+}
+
+.blurry{
+	   color: transparent;
+    text-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
+    width:50%;
+    margin:auto;
+}
+
+.link img{
+	height:15em;
+	width:auto;
+	margin:3em 0 1em 0;
+}
+
+.fixed {
+	min-height: 80%;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-image:url('attempt2.jpg');
+}
+
+.scrolling{
+	min-height: 50%;
 }
