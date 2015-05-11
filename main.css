@@ -1,17 +1,3 @@
-h1{
-	//#e84d2e
-	color:black;
-	font-family: 'Playfair Display SC', serif;
-	text-shadow: black 0px 0px 2px;
-	font-weight:700;
-	font-style: italic;
-	font-size: 3em;
-	position:fixed;
-	width:40%;
-	text-align: right;
-	right:1em;
-}
-
 
 
 body{
@@ -39,11 +25,17 @@ body, html, main {
 
 }
 
-.link{
-	display:block;
+h5{
+	font-size: 3em;
+	font-family: Lato;
+	letter-spacing: 11px;
+	position: absolute;
+	margin:-3em 0em;
+	opacity:0;
+	color:#403926;
 	width:33%;
-	float:left;
-	padding: 0 0 2em 0;
+	text-align: center;
+	text-shadow:#f2f1e1 0 0 13px;
 }
 
 .fixed-blur{
@@ -61,6 +53,21 @@ body, html, main {
     text-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
     width:50%;
     margin:auto;
+    transition: all .2s ease-in-out;
+}
+
+
+
+.link{
+	display:block;
+	width:33%;
+	float:left;
+	padding: 0 0 2em 0;
+}
+
+.link:hover {
+	text-shadow: rgba(0, 0, 0, 0.5) 0px 0px 2px;
+	transition: all .2s ease-in-out;
 }
 
 .link img{
@@ -78,16 +85,15 @@ body, html, main {
 	background-image:url('attempt2.jpg');
 }
 
+
+
 .scrolling{
 	min-height: 50%;
 }
 
 .intro{
 	font-family: Lato;
-
 	text-align: left;
-
-
 	color:#403926;
 }
 
@@ -129,3 +135,23 @@ h4{
 	 transition: all .2s ease-in-out;
 	 transform: scale(0.7);
 }
+
+.blur {
+-webkit-filter: blur(20px); -moz-filter: blur(20px);
+-o-filter: blur(20px); -ms-filter: blur(20px);
+filter: url(#blur); filter: blur(20px);  filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='2');
+-webkit-transition: 1s -webkit-filter linear;
+-o-transition: 1s -o-filter linear;
+
+}
+
+
+.unblur  { -webkit-filter: blur(0px); -moz-filter: blur(0px); -o-filter: blur(0px); -ms-filter: blur(0px);
+filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0'); filter: blur(0px); }
+
+@media screen and (min-width: 415px) {
+	.fixed{
+		background-position: center center;
+	}
+
+	}
