@@ -1,7 +1,8 @@
 h1{
-	color:#e84d2e;
+	//#e84d2e
+	color:black;
 	font-family: 'Playfair Display SC', serif;
-	text-shadow: #e84d2e 0px 0px 2px;
+	text-shadow: black 0px 0px 2px;
 	font-weight:700;
 	font-style: italic;
 	font-size: 3em;
@@ -11,9 +12,7 @@ h1{
 	right:1em;
 }
 
-#roxanne{
-	font-size: 1.4em;
-}
+
 
 body{
 	margin:0;
@@ -75,10 +74,58 @@ body, html, main {
 	background-size: cover;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-position: center bottom;
+	background-position: 0 -80px;
 	background-image:url('attempt2.jpg');
 }
 
 .scrolling{
 	min-height: 50%;
+}
+
+.intro{
+	font-family: Lato;
+
+	text-align: left;
+
+
+	color:#403926;
+}
+
+h2,h4{
+	margin:0 5px 0 20px;
+	text-shadow: #403926 0px 0px 3px;
+	text-transform: uppercase;
+	letter-spacing: -2px;
+	font-size: 4em;
+}
+
+h2{
+	font-size: 6em;
+}
+
+.filler{
+	padding:0.6em 0;
+	width:34%;
+	float:right;
+	text-shadow: #403926 0px 0px 1px;
+	color:transparent;
+}
+
+.block{
+	display: block;
+	float:left;
+}
+
+h4{
+	width:60%;
+}
+
+#roxanne{
+	color:#CE3B23;
+	text-shadow: #CE3B23 0px 0px 2px;
+}
+
+.transition{
+	 transition: all .2s ease-in-out;
+	 transform: scale(0.7);
 }
