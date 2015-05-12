@@ -38,6 +38,15 @@ h5{
 	text-shadow:#f2f1e1 0 0 13px;
 }
 
+.page{
+ text-decoration: none;
+ color:#403926;
+}
+
+.page:visited{
+	color:#403926;
+}
+
 .fixed-blur{
 	color:transparent;
 	text-shadow: rgba(0, 0, 0, 0.5) 0px 0px 3px;

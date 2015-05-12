@@ -7,7 +7,7 @@ $(document).ready(function(){
     var $this = $(this);
     var image = $this.children('.image');
     var text = $this.children('.blurry');
-    var title = $this.children('h5')
+    var title = $this.children('h5');
       $this.on("mouseenter", function(){
         text.css('text-shadow', 'rgba(0, 0, 0, 0.5) 0px 0px 1px')
         image.toggleClass('blur');

@@ -1,0 +1,39 @@
+html, body{
+  margin:0;
+  padding:0;
+  height:100%;
+  text-align: center;
+  background-color: #f2f1e1;
+}
+
+#image{
+  max-height:100%;
+  float:right;
+}
+
+#title{
+  margin:20px 0 0 0;
+  -ms-transform: rotate(-15deg); /* IE 9 */
+  -webkit-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+  font-family:"Lobster";
+  width:30%;
+  position:absolute;
+  font-size: 4em;
+  text-shadow: black 0 0 2px;
+  letter-spacing: 3px;
+}
+
+.columns{
+  position:absolute;
+  width:35%;
+  top:40%;
+  margin:20px;
+  color:transparent;
+  text-shadow: black 0 0 1px;
+ -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 32 /* Firefox */
+  column-count: 2;
+  text-align: justify;
+  text-justify: inter-word;
+}
