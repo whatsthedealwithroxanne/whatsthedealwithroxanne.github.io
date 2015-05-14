@@ -7,12 +7,12 @@ html, body{
 }
 
 #image{
-  max-height:100%;
+  height:100%;
   float:right;
 }
 
 #title{
-  margin:20px 0 0 0;
+  margin:20px 1em 0 1em;
   -ms-transform: rotate(-15deg); /* IE 9 */
   -webkit-transform: rotate(-15deg);
   transform: rotate(-15deg);
@@ -28,7 +28,7 @@ html, body{
   position:absolute;
   width:35%;
   top:40%;
-  margin:20px;
+  margin:3em;
   color:transparent;
   text-shadow: black 0 0 1px;
  -webkit-column-count: 2; /* Chrome, Safari, Opera */
@@ -36,4 +36,9 @@ html, body{
   column-count: 2;
   text-align: justify;
   text-justify: inter-word;
+}
+
+.half{
+  width:40%;
+
 }
