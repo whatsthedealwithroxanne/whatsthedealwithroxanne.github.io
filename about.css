@@ -3,16 +3,30 @@ html, body{
   padding:0;
   height:100%;
   text-align: center;
-  background-color: #f2f1e1;
+  overflow: hidden;
 }
 
 #image{
   height:100%;
   float:right;
+  text-align: center;
+ 
+
 }
 
+#container{
+   width:50%;
+   overflow: hidden;
+   float:right;
+   height:100%;
+   background-image: url("7.jpg");
+   background-position: center center;
+}
+
+
+
 #title{
-  margin:20px 1em 0 1em;
+  margin:63px 1em 0 1em;
   -ms-transform: rotate(-15deg); /* IE 9 */
   -webkit-transform: rotate(-15deg);
   transform: rotate(-15deg);
@@ -27,12 +41,12 @@ html, body{
 .columns{
   position:absolute;
   width:35%;
-  top:40%;
+  top:45%;
   margin:3em;
   color:transparent;
   text-shadow: black 0 0 1px;
  -webkit-column-count: 2; /* Chrome, Safari, Opera */
-  -moz-column-count: 32 /* Firefox */
+  -moz-column-count: 2 /* Firefox */
   column-count: 2;
   text-align: justify;
   text-justify: inter-word;
@@ -42,3 +56,59 @@ html, body{
   width:40%;
 
 }
+
+.container{
+  margin:20px;
+  background-color: #f2f1e1;
+  height:95%;
+  overflow: hidden;
+}
+
+
+@media (max-width: 1035px) { 
+  #title{
+    font-size: 3.5em;
+  }
+  .columns{
+    font-size: 14px;
+    margin-top: 1em;
+  }
+  
+}
+
+@media (max-width: 765px) { 
+  html, body{
+    overflow: scroll;
+  }
+  #title{
+    width:80%;
+  }
+  .columns{
+    width:83%;
+  }
+  #container{
+    position:absolute;
+    top:96%;
+    width:94%;
+  }
+
+  .container{
+    overflow: overlay;
+  }
+  
+}
+
+@media (max-width: 465px) {
+
+  #title{
+  margin:63px 1em 0em 0.5em;
+}
+
+  .columns{
+    width:72%;
+     -webkit-column-count: 1; /* Chrome, Safari, Opera */
+  -moz-column-count: 1 /* Firefox */
+  column-count: 1;
+  }
+
+  }
